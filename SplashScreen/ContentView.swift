@@ -5,12 +5,13 @@ struct ContentView: View {
     @StateObject var navigationStack = NavigationStack(ViewScreen.splash)
     
     var body: some View {
+     
         VStack {
             switch navigationStack.currentScreen {
             case .splash:
                 SplashScreen()
                     .onAppear(perform: {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                             navigationStack.advance(to: .main)
                         }
                     })
@@ -24,12 +25,18 @@ struct ContentView: View {
 
 struct SplashScreen: View {
     var body: some View {
-        Text("Splash Screen")
-            .foregroundColor(Color.indigo)
-            .font(.system(size: 36))
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.yellow)
-            .edgesIgnoringSafeArea(.all)
+        VStack{
+            Text("Splash Screen")
+                .foregroundColor(Color.indigo)
+                .font(.system(size: 36))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+    
+            Text("Made by tuly")
+                .foregroundColor(Color.indigo)
+                .font(.system(size: 20))
+                .frame(maxWidth: .infinity)
+                .padding(20)
+        }
     }
 }
 

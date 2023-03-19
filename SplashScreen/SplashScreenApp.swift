@@ -1,10 +1,3 @@
-//
-//  SplashScreenApp.swift
-//  SplashScreen
-//
-//  Created by Vlad on 3/14/23.
-//
-
 import SwiftUI
 
 @main
