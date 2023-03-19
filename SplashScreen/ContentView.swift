@@ -5,6 +5,7 @@ struct ContentView: View {
     @StateObject var navigationStack = NavigationStack(ViewScreen.splash)
     
     var body: some View {
+     
         VStack {
             switch navigationStack.currentScreen {
             case .splash:
@@ -35,8 +36,7 @@ struct SplashScreen: View {
                 .font(.system(size: 20))
                 .frame(maxWidth: .infinity)
                 .padding(20)
-        }.background(Color.yellow)
-            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
