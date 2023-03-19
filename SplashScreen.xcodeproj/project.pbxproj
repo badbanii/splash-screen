@@ -11,6 +11,7 @@
 		D57D470529C0AA460097E119 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D470429C0AA460097E119 /* ContentView.swift */; };
 		D57D470729C0AA470097E119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57D470629C0AA470097E119 /* Assets.xcassets */; };
 		D57D470A29C0AA470097E119 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57D470929C0AA470097E119 /* Preview Assets.xcassets */; };
+		D5971A6129C722D000A3EB04 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5971A6029C722D000A3EB04 /* NavigationStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D57D470429C0AA460097E119 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D57D470629C0AA470097E119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D57D470929C0AA470097E119 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5971A6029C722D000A3EB04 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				D57D470429C0AA460097E119 /* ContentView.swift */,
 				D57D470629C0AA470097E119 /* Assets.xcassets */,
 				D57D470829C0AA470097E119 /* Preview Content */,
+				D5971A6029C722D000A3EB04 /* NavigationStack.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57D470529C0AA460097E119 /* ContentView.swift in Sources */,
+				D5971A6129C722D000A3EB04 /* NavigationStack.swift in Sources */,
 				D57D470329C0AA460097E119 /* SplashScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
