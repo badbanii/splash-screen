@@ -2,23 +2,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showSplash = true
+    @StateObject var navigationStack = NavigationStack(ViewScreen.splash)
     
     var body: some View {
-        ZStack {
-            if showSplash {
+        VStack {
+            switch navigationStack.currentScreen {
+            case .splash:
                 SplashScreen()
                     .onAppear(perform: {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            withAnimation {
-                                showSplash = false
-                            }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                            navigationStack.advance(to: .main)
                         }
                     })
-            } else {
+            case .main:
                 MainScreen()
             }
         }
+        .environmentObject(navigationStack)
     }
 }
 
